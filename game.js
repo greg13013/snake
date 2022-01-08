@@ -38,7 +38,7 @@ window.requestAnimationFrame(main);
 function update() {
   updateSnake();
   updateFood();
-  // checkDeath();
+  checkDeath();
   
 }
 
@@ -50,6 +50,6 @@ function draw() {
 
 function checkDeath() {
     // console.log(getSnakeHead())
-    gameOver = outsideGrid(getSnakeHead()) || snakeIntersection();
+    gameOver = snakeIntersection();
   
 }
